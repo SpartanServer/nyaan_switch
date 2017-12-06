@@ -1,0 +1,11 @@
+[Unit]
+Description=nyaan_bot
+
+[Service]
+ExecStart=/usr/share/twitter_bot/nyaan_bot.py
+Restart=always
+Type=forking
+PIDFile=/var/run/nyaan_bot.pid
+
+[Install]
+WantedBy = multi-user.target
